@@ -1,0 +1,475 @@
+@charset "UTF-8";
+/* 
+    Document   : Atomos CSS Styles
+    Created on : Jul 22, 2012
+    Author     : Joe Rice
+    Description:
+        All styles for Atomos-Redux
+*/
+
+/* 
+  Common Styles
+*/
+
+@font-face{
+  font-family: "visitor";
+  src: url("../fonts/visitor1.ttf");
+}
+
+@font-face{
+  font-family: "bit";
+  src: url("../fonts/04b03.ttf");
+  font-size: 14px;
+}
+
+::-webkit-input-placeholder {
+  font-family: "visitor";
+  text-align:center;
+}
+
+::-moz-placeholder {
+  font-family: "visitor";
+  text-align:center;
+}
+
+::-o-placeholder {
+  font-family: "visitor";
+  text-align:center;
+}
+
+::-ms-placeholder {
+  font-family: "visitor";
+  text-align:center;
+}
+
+-placeholder {
+  font-family: "visitor";
+  text-align:center;
+}
+
+body{
+  background-color: whitesmoke;
+}
+
+.autospacer{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  font-family: "visitor";
+  font-size: 25px;
+  color: #23AFFA;
+  text-shadow: 1.75px 1.75px rgba(45, 45, 45, .6);
+}
+
+.spacer{
+  width: 100%;
+  height: 25px;
+  margin: auto;
+}
+
+.wrapper {
+  width: 800px;
+  height: auto;
+  margin: auto;
+}
+
+#content{
+  width: 640px;
+  height: auto;
+  margin: auto;
+  padding: 5px;
+}
+
+.containerdiv {
+  width:640px;
+  margin: auto;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  -o-border-radius:10px;
+  -ms-border-radius:10px;
+  border-radius:10px;
+  -webkit-box-shadow: 0 0 5px 2.5px rgba(45, 45, 45, .6);
+  -moz-box-shadow: 0 0 5px 2.5px rgba(45, 45, 45, .6);
+  -o-box-shadow: 0 0 5px 2.5px rgba(45, 45, 45, .6);
+  -ms-box-shadow: 0 0 5px 2.5px rgba(45, 45, 45, .6);
+  box-shadow: 0 0 5px 2.5px rgba(45, 45, 45, .6);
+}
+
+#banner {
+  width: 640px;
+  height: 175px;
+  margin: 5px auto;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  -o-border-radius:10px;
+  -ms-border-radius:10px;
+  border-radius:10px;
+  background-image: url(../images/banner.png);
+}
+
+:required {
+  -webkit-box-shadow: 0 0 5px 2.5px rgba(35,175,250, .4);
+  -moz-box-shadow: 0 0 5px 2.5px rgba(35,175,250, .4);
+  -o-box-shadow: 0 0 5px 2.5px rgba(35,175,250, .4);
+  -ms-box-shadow: 0 0 5px 2.5px rgba(35,175,250, .4);
+  box-shadow: 0 0 5px 2.5px rgba(35,175,250, .4);
+}
+
+:required:hover {
+  -webkit-box-shadow: 0 0 5px 5px rgba(35,175,250, .75);
+  -moz-box-shadow: 0 0 5px 5px rgba(35,175,250, .75);
+  -o-box-shadow: 0 0 5px 5px rgba(35,175,250, .75);
+  -ms-box-shadow: 0 0 5px 5px rgba(35,175,250, .75);
+  box-shadow: 0 0 5px 5px rgba(35,175,250, .75);
+}
+
+
+/* 
+  Login Form Styles
+*/
+
+.loginform {
+  width:300px;
+  margin: 20px auto;
+}
+
+input {
+  font-family: "visitor";
+  font-size:20px;
+  text-align: center;
+  width:300px;
+  min-height:30px;
+  display:block;
+  margin-bottom:2.5px;
+  margin-top:2.5px;
+  outline: none;
+
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -o-border-radius:5px;
+  -ms-border-radius:5px;
+  border-radius:5px;
+}
+
+input[type=submit] {
+  font-family: "visitor";
+  font-size: 48px;
+  background: whitesmoke;
+  margin-top: 20px;
+  padding:20px;
+  -webkit-box-shadow: 0 0 5px 2.5px rgba(0, 200, 50, .5);
+  -moz-box-shadow: 0 0 5px 2.5px rgba(0, 200, 50, .5);
+  -o-box-shadow: 0 0 5px 2.5px rgba(0, 200, 50, .5);
+  -ms-box-shadow: 0 0 5px 2.5px rgba(0, 200, 50, .5);
+  box-shadow: 0 0 5px 2.5px rgba(0, 200, 50, .5);
+}
+
+input[type=submit]:hover {
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 200, 50, .95);
+  -moz-box-shadow: 0 0 5px 5px rgba(0, 200, 50, .95);
+  -o-box-shadow: 0 0 5px 5px rgba(0, 200, 50, .95);
+  -ms-box-shadow: 0 0 5px 5px rgba(0, 200, 50, .95);
+  box-shadow: 0 0 5px 5px rgba(0, 200, 50, .95);
+}
+
+input[type=submit]#registration {
+  font-family: "visitor";
+  font-size: 24px;
+  width: 100px;
+  background: whitesmoke;
+  margin: 5px auto;
+  padding:2.5px;
+  font-size: 15px;
+  -webkit-box-shadow: 0 0 5px 2.5px rgba(0, 200, 50, .5);
+  -moz-box-shadow: 0 0 5px 2.5px rgba(0, 200, 50, .5);
+  -o-box-shadow: 0 0 5px 2.5px rgba(0, 200, 50, .5);
+  -ms-box-shadow: 0 0 5px 2.5px rgba(0, 200, 50, .5);
+  box-shadow: 0 0 5px 2.5px rgba(0, 200, 50, .5);
+}
+
+input[type=submit]#registration:hover {
+  font-family: "visitor";
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 200, 50, .95);
+  -moz-box-shadow: 0 0 5px 5px rgba(0, 200, 50, .95);
+  -o-box-shadow: 0 0 5px 5px rgba(0, 200, 50, .95);
+  -ms-box-shadow: 0 0 5px 5px rgba(0, 200, 50, .95);
+  box-shadow: 0 0 5px 5px rgba(0, 200, 50, .95);
+}
+
+div#loginwrapper{
+  width: 640px;
+  margin: auto;
+}
+
+
+/* 
+ * Register Form Styles
+*/
+
+#registerform-wrapper{
+  position: relative;
+  width: 640px;
+  margin: auto;
+}
+
+.registerform {
+  width:300px;
+  margin: auto;
+}
+
+input[type=email].register, input[type=password].register, input[type=submit].register {
+  font-family: "visitor";
+  font-size:20px;
+  width:300px;
+  min-height:30px;
+  display:block;
+  margin-bottom:2.5px;
+  margin-top:2.5px;
+  outline: none;
+
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -o-border-radius:5px;
+  -ms-border-radius:5px;
+  border-radius:5px;
+}
+
+
+input[type=submit]#registersubmit {
+  font-family: "visitor";
+  width: 100px;
+  background:rgba(250, 250, 250, 1);
+  margin: auto;
+  margin-top: 50px;
+  padding:2.5px;
+  font-size: 15px;
+  -webkit-box-shadow: 0 0 5px 2.5px rgba(0, 200, 50, .5);
+  -moz-box-shadow: 0 0 5px 2.5px rgba(0, 200, 50, .5);
+  -o-box-shadow: 0 0 5px 2.5px rgba(0, 200, 50, .5);
+  -ms-box-shadow: 0 0 5px 2.5px rgba(0, 200, 50, .5);
+  box-shadow: 0 0 5px 2.5px rgba(0, 200, 50, .5);
+}
+
+input[type=submit]#registersubmit:hover {
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 200, 50, .95);
+  -moz-box-shadow: 0 0 5px 5px rgba(0, 200, 50, .95);
+  -o-box-shadow: 0 0 5px 5px rgba(0, 200, 50, .95);
+  -ms-box-shadow: 0 0 5px 5px rgba(0, 200, 50, .95);
+  box-shadow: 0 0 5px 5px rgba(0, 200, 50, .95);
+}
+
+input[type=submit].backbutton#backbutton {
+  font-family: "visitor";
+  width: 75px;
+  background: whitesmoke;
+  font-size: 15px;
+  position: absolute;
+  padding: 0px;
+  margin: auto 25px;
+  display: inline;
+  bottom: 25;
+  vertical-align: text-bottom;
+  -webkit-box-shadow: 0 0 5px 2.5px rgba(200, 10, 10, .5);
+  -moz-box-shadow: 0 0 5px 2.5px rgba(200, 10, 10, .5);
+  -o-box-shadow: 0 0 5px 2.5px rgba(200, 10, 10, .5);
+  -ms-box-shadow: 0 0 5px 2.5px rgba(200, 10, 10, .5);
+  box-shadow: 0 0 5px 2.5px rgba(200, 10, 10, .5);
+}
+
+input[type=submit].backbutton#backbutton:hover {
+  -webkit-box-shadow: 0 0 5px 5px rgba(250, 10, 10, .95);
+  -moz-box-shadow: 0 0 5px 5px rgba(250, 10, 10, .95);
+  -o-box-shadow: 0 0 5px 5px rgba(250, 10, 10, .95);
+  -ms-box-shadow: 0 0 5px 5px rgba(250, 10, 10, .95);
+  box-shadow: 0 0 5px 5px rgba(250, 10, 10, .95);
+}
+
+input[type=radio] {
+  display: block;
+  width: 25px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+img.sex-label{
+  width: 75px;
+  margin: 0 auto;
+  padding-bottom: 2.5px;
+  text-align:center;
+  vertical-align:middle; 
+  display:table-cell;
+}
+
+div.sex-input{
+  width: 300px;
+  margin: 0 auto;
+}
+
+div#male-input{
+  width: 125px;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  left: 25px;
+}
+
+div#female-input{
+  width: 125px;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  left: 20px;
+}
+
+div#backdiv{
+  width: 170px;
+  height: 330px;
+  position: relative;
+  float: left;
+  margin-top: 1px;
+  bottom: 15px;
+}
+
+
+
+/* 
+ * Level Styles
+*/
+
+
+#gamewrapper{
+  width: 640px;
+  height: 360px;
+  margin: auto;
+}
+
+#gamecanvas{
+  width: 640px;
+  height: 360px;
+  margin: auto;
+}
+
+
+/*
+* Console Styles
+*/
+
+#console-wrapper{
+  position: relative;
+}
+
+/* The console container element */
+#console {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 640px;
+  height: 125px;
+  background-color: whitesmoke;
+}
+/* The inner console element. */
+.jqconsole {
+  padding: 10px;
+  font-family: "bit";
+}
+/* The cursor. */
+.jqconsole-cursor {
+  background-color: rgba(5, 75, 240, .8);
+}
+/* The cursor color when the console looses focus. */
+.jqconsole-blurred .jqconsole-cursor {
+  background-color: rgba(30, 30, 30, .5);
+}
+/* The current prompt text color */
+.jqconsole-prompt {
+  font-family: "bit";
+  color: rgba(5,75,240,0.8);
+  font-weight: normal;
+}
+/* The command history */
+.jqconsole-old-prompt {
+  font-family: "bit";
+  color: rgba(5,75,240,0.8);
+  font-weight: normal;
+}
+/* The text color of the output. */
+.jqconsole-output {
+  font-family: "bit";
+  color: rgba(40, 140, 55, .75);
+  font-weight: 500;
+}
+
+/*
+ * Mobile
+*/
+
+#mobilecontrols.hidden{
+  width: 100%;
+  height: 66px;
+  position: relative;
+  visibility: hidden;
+}
+
+#mobilecontrols.visible{
+  width: 100%;
+  height: 66px;
+  position: relative;
+  visibility: visible;
+}
+
+
+#control-left{
+  position: relative;
+  width: 64px;
+  height:64px;
+  padding: 1px;
+  float: left;
+  background-image: url(../images/leftarrow.png);
+}
+
+#control-right{
+  position: relative;
+  width: 64px;
+  height:64px;
+  padding: 1px;
+  float: left;
+  background-image: url(../images/rightarrow.png);
+}
+#control-swapweapon{
+  position: absolute;
+  top: 0px;
+  left: 320px;
+  padding: 1px;
+  width: 64px;
+  height:64px;
+  background-image: url(../images/rightarrow.png);
+}
+
+#control-start{
+  position: absolute;
+  top: 0px;
+  left: 256px;
+  padding: 1px;
+  width: 64px;
+  height:64px;
+  background-image: url(../images/jumpbutton.png);
+}
+
+#control-jump{
+  position: relative;
+  width: 64px;
+  height:64px;
+  padding: 1px;
+  float: right;
+  background-image: url(../images/jumpbutton.png);
+}
+
+#control-shoot{
+  position: relative;
+  width: 64px;
+  height:64px;
+  padding: 1px;
+  float: right;
+  background-image: url(../images/firebutton.png);
+}

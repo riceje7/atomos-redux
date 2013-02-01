@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+
+    <script src="../js/register.js" type="text/javascript">
+</script>
+
+    <title></title>
+</head>
+
+<body>
+    <div class="autospacer">
+        Please fill out the form below to register for a player account:
+    </div><!-- end autospacer -->
+
+    <div class="spacer"></div><!-- end spacer -->
+
+    <div id="registerform-wrapper">
+        <div id="buffer"></div>
+
+        <div id="backdiv">
+            <form>
+                <input type="submit" class="backbutton" id="backbutton" name="backbutton" value="BACK">
+            </form>
+        </div><!-- end backdiv -->
+
+        <form class="registerform" id="registerform" onsubmit="return false">
+            <input type="email" class="register" id="login" name="login" placeholder="Email Address..." autofocus="" required=""><br>
+            <input type="password" class="register" id="password" name="password" placeholder="Password..." required=""><br>
+            <input type="password" class="register" id="password2" name="password2" placeholder="Confirm Password..." required=""><br>
+
+            <div class="sex-input">
+                <div id="male-input">
+                    <img class="sex-label" src="./images/dude-label.png"><input type="radio" id="male" name="sex" value="male">
+                </div>
+
+                <div id="female-input">
+                    <img class="sex-label" src="./images/lady-label.png"><input type="radio" id="female" name="sex" value="female">
+                </div>
+            </div><input type="submit" class="register" id="registersubmit" name="registersubmit" value="REGISTER">
+        </form><!-- end registerform -->
+
+        <div class="spacer"></div><!-- end spacer -->
+    </div><!-- end registerform-wrapper -->
+</body>
+</html>
